@@ -5,8 +5,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
@@ -22,10 +22,8 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.MikhailZhalskiy"
+            groupId = "com.github.sergei4"
             artifactId = "cotea"
-            version = "0.1"
-
             from(components["kotlin"])
         }
     }
